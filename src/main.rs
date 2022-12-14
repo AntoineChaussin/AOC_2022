@@ -2,6 +2,7 @@ use aoc::aoc_1::*;
 use aoc::aoc_2::*;
 use aoc::aoc_3::*;
 use aoc::aoc_4::*;
+use aoc::aoc_5::*;
 
 fn main() {
     aoc_1_1();
@@ -12,4 +13,6 @@ fn main() {
     aoc_3_2();
     aoc_4_1();
     aoc_4_2();
+    aoc_5_1();
+    aoc_5_2();
 }
