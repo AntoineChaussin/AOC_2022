@@ -153,7 +153,7 @@ pub fn aoc_10_1() {
 pub fn aoc_10_2() {
     let input = get_input("resource/aoc_10/data.txt");
 
-    let mut stack: Stack = input.iter().map(|s| s.as_str()).into_iter().collect();
+    let stack: Stack = input.iter().map(|s| s.as_str()).into_iter().collect();
 
     let screen = run_instructions(stack);
 
