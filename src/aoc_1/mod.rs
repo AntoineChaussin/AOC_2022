@@ -24,7 +24,7 @@ pub fn aoc_1_1() {
 }
 
 pub fn aoc_1_2() {
-    let input = get_input("D:\\tmp\\aoc_1\\data.txt");
+    let input = get_input("resource/aoc_1/data.txt");
 
     let mut top3 = OrderedList::new();
 
