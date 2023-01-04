@@ -177,19 +177,6 @@ fn parse_down<I: Iterator<Item = String>>(iter: I) -> HashMap<Position, Rc<RefCe
     graph
 }
 
-fn find<F: Fn(&Square) -> bool>(grid: &Grid, f: F) -> Position {
-    for i in 0..grid.len() {
-        let row = &grid[i];
-        for j in 0..row.len() {
-            if f(&row[j]) {
-                return Position::new(i, j);
-            }
-        }
-    }
-
-    unreachable!()
-}
-
 fn create_unvisited_set(nodes: &HashMap<Position, NodeRef>) -> BTreeSet<PosAndDist> {
     let mut set = BTreeSet::new();
 
