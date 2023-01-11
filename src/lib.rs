@@ -1,4 +1,5 @@
 #![feature(map_first_last)]
+#![feature(mixed_integer_ops)]
 
 use std::{fs, path::Path};
 
@@ -8,6 +9,7 @@ pub mod aoc_11;
 pub mod aoc_12;
 pub mod aoc_13;
 pub mod aoc_14;
+pub mod aoc_15;
 pub mod aoc_2;
 pub mod aoc_3;
 pub mod aoc_4;
